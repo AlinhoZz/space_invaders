@@ -1,0 +1,108 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="SpaceInvaders.Views.GameWindow"
+
+        Title="Space Invaders - Jogo"
+        Width="800" Height="600"
+        WindowState="Maximized"
+        SystemDecorations="Full"
+        WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+        <FontFamily x:Key="PressStart2PFont">
+            avares://SpaceInvaders/Assets/Fonts/Press_Start_2P/PressStart2P-Regular.ttf#Press Start 2P
+        </FontFamily>
+    </Window.Resources>
+       
+    <Grid>
+        <Image Source="/Assets/background.jpg"
+               Stretch="UniformToFill" />
+
+        <Viewbox Stretch="Uniform"
+                 HorizontalAlignment="Stretch"
+                 VerticalAlignment="Stretch">
+
+            <Canvas x:Name="GameCanvas"
+                    Width="800"
+                    Height="600">
+                   
+                <TextBlock Text="SCORE"
+                           FontSize="16"
+                           FontFamily="{StaticResource PressStart2PFont}"
+                           Foreground="White"
+                           Canvas.Left="10"
+                           Canvas.Top="10" />
+                
+                <TextBlock x:Name="ScoreText"
+                           Text="0"
+                           FontSize="16"
+                           FontFamily="{StaticResource PressStart2PFont}"
+                           Foreground="LimeGreen"
+                           Canvas.Left="100"
+                           Canvas.Top="10" />
+                
+                <TextBlock Text="LIVES"
+                           FontSize="12"
+                           FontFamily="{StaticResource PressStart2PFont}"
+                           Foreground="White"
+                           Canvas.Left="600"
+                           Canvas.Top="20" />
+                
+                <!-- Vidas do player -->
+                <Image x:Name="Life1"
+                       Source="/Assets/sprites/4.png"
+                       Width="30" Height="30"
+                       Canvas.Left="670"
+                       Canvas.Top="7" />
+                <Image x:Name="Life2"
+                       Source="/Assets/sprites/4.png"
+                       Width="30" Height="30"
+                       Canvas.Left="705"
+                       Canvas.Top="7" />
+                <Image x:Name="Life3"
+                       Source="/Assets/sprites/4.png"
+                       Width="30" Height="30"
+                       Canvas.Left="740"
+                       Canvas.Top="7" />
+                
+                <Rectangle Fill="LimeGreen"
+                           Width="800"
+                           Height="2"
+                           Canvas.Left="0"
+                           Canvas.Top="580" />
+                
+                <Image x:Name="Bunker1"
+                       Tag="Bunker"
+                       Source="/Assets/sprites/Wall1.png"
+                       Width="60" Height="40"
+                       Canvas.Left="130"
+                       Canvas.Top="480" />
+                <Image x:Name="Bunker2"
+                       Tag="Bunker"
+                       Source="/Assets/sprites/Wall1.png"
+                       Width="60" Height="40"
+                       Canvas.Left="300"
+                       Canvas.Top="480" />
+                <Image x:Name="Bunker3"
+                       Tag="Bunker"
+                       Source="/Assets/sprites/Wall1.png"
+                       Width="60" Height="40"
+                       Canvas.Left="470"
+                       Canvas.Top="480" />
+                <Image x:Name="Bunker4"
+                       Tag="Bunker"
+                       Source="/Assets/sprites/Wall1.png"
+                       Width="60" Height="40"
+                       Canvas.Left="640"
+                       Canvas.Top="480" />
+                
+                <Image x:Name="PlayerShip"
+                       Source="/Assets/sprites/4.png"
+                       Width="40"
+                       Height="30"
+                       Canvas.Left="380"
+                       Canvas.Top="550" />
+            </Canvas>
+        </Viewbox>
+    </Grid>
+</Window>

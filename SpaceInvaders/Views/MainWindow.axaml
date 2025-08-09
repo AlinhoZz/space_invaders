@@ -1,0 +1,133 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="SpaceInvaders.Views.MainWindow"
+        Title="Space Invaders"
+        Width="800" Height="600"
+        WindowState="Maximized"
+        SystemDecorations="Full"
+        WindowStartupLocation="CenterScreen">
+  
+    <Window.Resources>
+        <FontFamily x:Key="PressStart2PFont">
+            avares://SpaceInvaders/Assets/Fonts/Press_Start_2P/PressStart2P-Regular.ttf#Press Start 2P
+        </FontFamily>
+        <FontFamily x:Key="RowdiesBoldFont">
+            avares://SpaceInvaders/Assets/Fonts/Rowdies/Rowdies-Bold.ttf#Rowdies
+        </FontFamily>
+        <FontFamily x:Key="DokyoFont">
+            avares://SpaceInvaders/Assets/Fonts/Dokyo-FontZillion/Fonts/dokyo___.ttf#Dokyo
+        </FontFamily>
+    </Window.Resources>
+
+    <Grid>
+        <Image Source="/Assets/background.jpg"
+               Stretch="UniformToFill"
+               ZIndex="0" />
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="4*" />
+                <RowDefinition Height="2*" />
+            </Grid.RowDefinitions>
+            
+            <StackPanel Grid.Row="1"
+                        Orientation="Vertical"
+                        HorizontalAlignment="Center"
+                        Spacing="0">
+                <TextBlock Text="SPACE"
+                           Foreground="White"
+                           FontSize="104"
+                           FontFamily="{StaticResource DokyoFont}"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,-45">
+                    <TextBlock.Effect>
+                        <DropShadowEffect Color="White" BlurRadius="30" Opacity="0.7"/>
+                    </TextBlock.Effect>
+                </TextBlock>
+                <TextBlock Text="INVADERS"
+                           Foreground="LimeGreen"
+                           FontSize="64"
+                           FontFamily="{StaticResource DokyoFont}"
+                           HorizontalAlignment="Center">
+                    <TextBlock.Effect>
+                        <DropShadowEffect Color="LimeGreen" BlurRadius="30" Opacity="0.7"/>
+                    </TextBlock.Effect>
+                </TextBlock>
+            </StackPanel>
+            
+            <StackPanel Grid.Row="2"
+                        Orientation="Vertical"
+                        HorizontalAlignment="Center"
+                        Spacing="15">
+                <StackPanel Orientation="Horizontal"
+                            Spacing="10"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center">
+                    <Image Source="/Assets/sprites/enemy_10.png" Width="30" Height="30" />
+                    <TextBlock Text="= 10 PTS"
+                               Foreground="White"
+                               FontSize="12"
+                               FontFamily="{StaticResource PressStart2PFont}"
+                               VerticalAlignment="Center" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"
+                            Spacing="10"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center">
+                    <Image Source="/Assets/sprites/enemy_20.png" Width="30" Height="30" />
+                    <TextBlock Text="= 20 PTS"
+                               Foreground="White"
+                               FontSize="12"
+                               FontFamily="{StaticResource PressStart2PFont}"
+                               VerticalAlignment="Center" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"
+                            Spacing="10"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center">
+                    <Image Source="/Assets/sprites/polvo2.png" Width="30" Height="30" />
+                    <TextBlock Text="= 40 PTS"
+                               Foreground="White"
+                               FontSize="12"
+                               FontFamily="{StaticResource PressStart2PFont}"
+                               VerticalAlignment="Center" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"
+                            Spacing="10"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center">
+                    <Image Source="/Assets/sprites/5.png" Width="30" Height="30" />
+                    <TextBlock Text="= ??? PTS"
+                               Foreground="White"
+                               FontSize="12"
+                               FontFamily="{StaticResource PressStart2PFont}"
+                               VerticalAlignment="Center" />
+                </StackPanel>
+            </StackPanel>
+            
+            <Button Grid.Row="3"
+                    Content="PLAY SPACE INVADERS"
+                    Background="Transparent"
+                    Foreground="White"
+                    FontSize="16"
+                    FontFamily="{StaticResource PressStart2PFont}"
+                    Width="298"
+                    Height="20"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Top"
+                    Click="OnPlayButtonClick"
+                    BorderBrush="White"
+                    BorderThickness="1"
+                    Padding="5,1.5">
+                <Button.Styles>
+                    <Style Selector="Button:pointerover">
+                        <Setter Property="Foreground" Value="LimeGreen"/>
+                        <Setter Property="BorderBrush" Value="LimeGreen"/>
+                    </Style>
+                </Button.Styles>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>
