@@ -18,7 +18,7 @@ Este projeto é uma recriação do clássico jogo **Space Invaders**. Ele foi de
 - **Frameworks/Libraries:**
   - **Avalonia**: Framework para a interface gráfica, similar ao WPF.
   - **DispatcherTimer**: Utilizado para controlar a atualização do jogo.
-- **Git e GitLab**
+- **Git e GitHub**
 
 ## Como Executar o Projeto
 1. Clone o repositório:
@@ -74,7 +74,7 @@ Este projeto é uma recriação do clássico jogo **Space Invaders**. Ele foi de
 Este projeto é código aberto e pode ser utilizado livremente para estudo, modificação e aprimoramento.
 
 ## Repositório Oficial
-- [📂 Acesse o projeto no GitLab](https://github.com/AlinhoZz/space_invaders.git)
+- [📂 Acesse o projeto no GitHub](https://github.com/AlinhoZz/space_invaders.git)
 
 ## Contato
 Caso tenha dúvidas ou sugestões, entre em contato com os desenvolvedores através de seus perfis no GitLab:
