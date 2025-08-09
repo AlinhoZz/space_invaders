@@ -1,12 +1,10 @@
-# Space Invaders - Desenvolvido por Alisson Silva, Bruno Souza e Julio Gomes
+# Space Invaders - Desenvolvido por Alisson Silva   
 
 ## Descrição do Projeto
 Este projeto é uma recriação do clássico jogo **Space Invaders**. Ele foi desenvolvido utilizando **C#** e o framework **Avalonia**, seguindo o padrão **MVVM (Model-View-ViewModel)** para melhor separação da lógica do jogo e da interface gráfica.
 
-## Integrantes
-- **Alisson Silva**
-- **Bruno Souza**
-- **Julio Gomes**
+## 👤 Autor
+- **Alisson Silva** – Desenvolvimento completo (lógica, interface, sons, organização do código e integração)
 
 ## Funcionalidades
 - 🎮 Controle do jogador com teclado
@@ -25,7 +23,7 @@ Este projeto é uma recriação do clássico jogo **Space Invaders**. Ele foi de
 ## Como Executar o Projeto
 1. Clone o repositório:
    ```bash
-   git clone https://gitlab.com/jala-university1/cohort-3/oficial-pt-programa-o-3-cspr-231.ga.t1.25.m1/se-o-b/boston-group/spaceinvaders.git
+   git clone https://github.com/AlinhoZz/space_invaders.git
    ```
 2. Acesse o diretório do projeto:
    ```bash
@@ -73,10 +71,11 @@ Este projeto é uma recriação do clássico jogo **Space Invaders**. Ele foi de
 ```
 
 ## Licença
-Este projeto está sob a licença Boston Group.
+Este projeto é código aberto e pode ser utilizado livremente para estudo, modificação e aprimoramento.
+
+## Repositório Oficial
+- [📂 Acesse o projeto no GitLab](https://github.com/AlinhoZz/space_invaders.git)
 
 ## Contato
 Caso tenha dúvidas ou sugestões, entre em contato com os desenvolvedores através de seus perfis no GitLab:
-- [Alisson Silva](alisson.silva@jala.university)
-- [Bruno Souza](bruno.nascimento@jala.university)
-- [Julio Gomes](julio.gomes@jala.university)
+- [Alisson Silva](alissondurden@gmail.com)
